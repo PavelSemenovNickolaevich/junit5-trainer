@@ -6,7 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 
 public abstract class IntegrationTestBase {
 
-    private static final String CLEAN_SQL = "DROP TABLE IF EXISTS users;";
+//    private static final String CLEAN_SQL = "DROP TABLE IF EXISTS users;";
+    private static final String CLEAN_SQL = "DELETE FROM users";
     private static final String CREATE_SQL = """
             CREATE TABLE IF NOT EXISTS users
             (
